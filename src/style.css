@@ -38,3 +38,11 @@ body{
   height: 500px;
 
 }
+
+.card-body{
+  align-items: center;
+}
+
+.album-img{
+  height: 350px;
+}
