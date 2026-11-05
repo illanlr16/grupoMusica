@@ -203,6 +203,7 @@
       </div>
 
       <!-- Sección de Álbumes -->
+      
       <div id="albumes" class="container my-5">
         <h2 class="text-white text-uppercase fw-bold mb-4 text-center">Discografía / Álbumes</h2>
         
@@ -215,7 +216,22 @@
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">POST HUMAN: NeX GEn</h5>
                 <p class="card-text text-muted">El último y caótico viaje sonoro de la banda.</p>
-                <a href="#" class="btn btn-outline-light mt-auto">Escuchar álbum</a>
+                
+                <!-- Botón con ID de objetivo único -->
+                <button class="btn btn-outline-light w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisco1" aria-expanded="false" aria-controls="collapseDisco1">
+                  Ver canciones
+                </button>
+
+                <!-- Collapse con ID único -->
+                <div class="collapse" id="collapseDisco1">
+                  <ul class="list-group list-group-flush rounded border border-secondary my-2">
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">1. Youtopia</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">2. Kool-Aid</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">3. Top 10 staTues tHat Cried bLood</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">4. LosT</li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
@@ -226,8 +242,21 @@
               <img src="/src/assets/survivalhorror.jpg" class="card-img-top album-img" alt="Post Human: Survival Horror">
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">Survival Horror</h5>
-                <p class="card-text text-muted">El EP que redefinió el metal moderno en plena pandemia.</p>
-                <a href="#" class="btn btn-outline-light mt-auto">Escuchar álbum</a>
+                <p class="card-text text-muted">El EP que redefinió el metal moderno en pandemia.</p>
+                
+                <button class="btn btn-outline-light w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisco2" aria-expanded="false" aria-controls="collapseDisco2">
+                  Ver canciones
+                </button>
+
+                <div class="collapse" id="collapseDisco2">
+                  <ul class="list-group list-group-flush rounded border border-secondary my-2">
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">1. Dear Diary,</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">2. Parasite Eve</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">3. Teardrops</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">4. Kingslayer</li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
@@ -239,19 +268,45 @@
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title fw-bold">Amo</h5>
                 <p class="card-text text-muted">La obra maestra experimental y ganadora de Grammy.</p>
-                <a href="#" class="btn btn-outline-light mt-auto">Escuchar álbum</a>
+                
+                <button class="btn btn-outline-light w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisco3" aria-expanded="false" aria-controls="collapseDisco3">
+                  Ver canciones
+                </button>
+
+                <div class="collapse" id="collapseDisco3">
+                  <ul class="list-group list-group-flush rounded border border-secondary my-2">
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">1. MANTRA</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">2. medicine</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">3. Wonderful Life</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">4. Sugar Honey Ice & Tea</li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
 
-          <!-- Album 4 -->
+          <!-- Álbum 4 -->
           <div class="col-12 col-md-6 col-lg-3">
             <div class="card h-100 bg-dark text-white border-secondary shadow">
-              <img src="/src/assets/countyourblessings.jpg" class="card-img-top album-img" alt="Post Human: Survival Horror">
+              <img src="/src/assets/countyourblessings.jpg" class="card-img-top album-img" alt="Count Your Blessings">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title fw-bold">Count your blessings</h5>
-                <p class="card-text text-muted">El EP que redefinió el metal moderno en plena pandemia.</p>
-                <a href="#" class="btn btn-outline-light mt-auto">Escuchar álbum</a>
+                <h5 class="card-title fw-bold">Count Your Blessings</h5>
+                <p class="card-text text-muted">Los orígenes del deathcore más crudo y visceral.</p>
+                
+                <button class="btn btn-outline-light w-100 mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDisco4" aria-expanded="false" aria-controls="collapseDisco4">
+                  Ver canciones
+                </button>
+
+                <div class="collapse" id="collapseDisco4">
+                  <ul class="list-group list-group-flush rounded border border-secondary my-2">
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">1. Pray for Plagues</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">2. Tell Slater Not to Worry</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">3. For Stevie Wonder's Eyes Only</li>
+                    <li class="list-group-item bg-dark text-white-50 small border-secondary">4. A Lot Like Vegas</li>
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
