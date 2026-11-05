@@ -9,10 +9,15 @@
   <body>
     <div id="app">
 
-      <nav class="navbar navbar-expand-md navbar-custom border-bottom border-secondary fixed-top" data-bs-theme="light">
+      <nav class="navbar navbar-expand-md navbar-custom border-bottom border-secondary fixed-top" data-bs-theme="dark">
         <div class="container">
-          <img src="https://logos-world.net/wp-content/uploads/2023/11/Bring-Me-the-Horizon-Emblem.png" class="logoBMTH">
+          
+          <!-- Logo-->
+          <a class="navbar-brand d-flex align-items-center" href="#inicio">
+            <img src="https://logos-world.net/wp-content/uploads/2023/11/Bring-Me-the-Horizon-Emblem.png" alt="BMTH Logo" class="logoBMTH">
+          </a>
 
+          <!-- Botón menú -->
           <button class="navbar-toggler btn-hamborguesa" type="button" 
             data-bs-toggle="collapse" 
             data-bs-target="#menuPrincipal" 
@@ -22,23 +27,50 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
+          <!-- Menú de Navegación -->
           <div class="collapse navbar-collapse" id="menuPrincipal">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto align-items-center">
+              
               <li class="nav-item">
                 <a class="nav-link active" href="#inicio">Inicio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#albumes">Álbumes</a>
+              
+              <!-- Desplegablede Discografía -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Discografía
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#albumes">POST HUMAN: NeX GEn</a></li>
+                  <li><a class="dropdown-item" href="#albumes">Survival Horror</a></li>
+                  <li><a class="dropdown-item" href="#albumes">Amo</a></li>
+                  <li><a class="dropdown-item" href="#albumes">Count Your Blessings</a></li>
+                </ul>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link" href="#tour">Tour</a>
               </li>
+
+              <!-- Desplegable de Redes -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Redes
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                  <li><a class="dropdown-item" href="https://open.spotify.com/intl-es/artist/1Ffb6ejR6Fe5IamqA5oRUF" target="_blank" rel="noopener">Spotify</a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/channel/UCAayZDDj3uom0QpSJiwLoUw" target="_blank" rel="noopener">YouTube</a></li>
+                  <li><a class="dropdown-item" href="https://www.instagram.com/bringmethehorizon/" target="_blank" rel="noopener">Instagram</a></li>
+                </ul>
+              </li>
+
             </ul>
           </div>
           
         </div>
       </nav>
 
+      <!-- Carousel -->
       <div id="inicio" class="container my-4">
         <div class="row justify-content-center">
           <div class="col-12 col-lg-10">
