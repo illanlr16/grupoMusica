@@ -28,3 +28,8 @@
   transform: translateY(-2px);
   text-shadow: 0 0 8px rgba(255,77,77,0.6);
 }
+
+img{
+  width: auto;
+  height: 550px;
+}
