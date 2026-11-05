@@ -39,55 +39,65 @@
         </div>
       </nav>
 
-    <div id="carruselBMTH" class="carousel slide" data-bs-ride="carousel">
+    <!-- Contenedor para limitar el ancho del carrusel y centrarlo -->
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
 
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <!-- Tu carrusel original de BMTH -->
+            <div id="carruselBMTH" class="carousel slide" data-bs-ride="carousel">
+
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselBMTH" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+
+              <div class="carousel-inner rounded shadow">
+                
+                <!-- Imagen 1 -->
+                <div class="carousel-item active">
+                  <img src="/src/assets/bmth1.png" class="d-block w-100 carrusel-img" alt="Bring Me The Horizon En Concierto">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-uppercase fw-bold">Post Human Era</h2>
+                  </div>
+                </div>
+
+                <!-- Imagen 2 -->
+                <div class="carousel-item">
+                  <img src="/src/assets/bmth2.png" class="d-block w-100 carrusel-img" alt="Oli Sykes en directo">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-uppercase fw-bold">Live Tour</h2>
+                  </div>
+                </div>
+
+                <!-- Imagen 3 -->
+                <div class="carousel-item">
+                  <img src="/src/assets/bmth3.png" class="d-block w-100 carrusel-img" alt="Merchandising y Estética BMTH">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-uppercase fw-bold">NeX GEn</h2>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Botones laterales anterior / siguiente -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carruselBMTH" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carruselBMTH" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+
+            </div>
+
+          </div>
+        </div>
       </div>
 
-      <div class="carousel-inner">
-        
-        <!-- Imagen 1 -->
-        <div class="carousel-item active">
-          <img src="/src/assets/bmth1.png" class="d-block w-100 carrusel-img" alt="Bring Me The Horizon En Concierto">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="text-uppercase fw-bold">Post Human Era</h2>
-          </div>
-        </div>
 
-        <!-- Imagen 2 -->
-        <div class="carousel-item">
-          <img src="/src/assets/bmth2.png" class="d-block w-100 carrusel-img" alt="Oli Sykes en directo">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="text-uppercase fw-bold">Live Tour</h2>
-          </div>
-        </div>
-
-        <!-- Imagen 3 -->
-        <div class="carousel-item">
-          <img src="/src/assets/bmth3.png" class="d-block w-100 carrusel-img" alt="Merchandising y Estética BMTH">
-          <div class="carousel-caption d-none d-md-block">
-            <h2 class="text-uppercase fw-bold">NeX GEn</h2>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- botones laterales anterior / siguiente -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carruselBMTH" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carruselBMTH" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-
-    </div>
-
-    
 
 
     </div>
