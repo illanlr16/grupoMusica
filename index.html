@@ -63,6 +63,13 @@
                   <li><a class="dropdown-item" href="https://www.instagram.com/bringmethehorizon/" target="_blank" rel="noopener">Instagram</a></li>
                 </ul>
               </li>
+
+              <li class="nav-item ms-md-2 my-2 my-md-0">
+                <button type="button" class="btn btn-outline-danger btn-sm text-uppercase fw-bold px-3" data-bs-toggle="modal" data-bs-target="#modalContacto">
+                Contacto
+                </button>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -383,7 +390,7 @@
                 </tbody>
               </table>
             </div>
-            
+
             <!-- Paginación -->
             <nav aria-label="Navegación de fechas del Tour" class="mt-4">
               <ul class="pagination justify-content-center mb-0">
@@ -410,6 +417,63 @@
       </div>
 
 
+    </div>
+    <!-- Form de contacto -->
+    <div class="modal fade" id="modalContacto" tabindex="-1" aria-labelledby="modalContactoLabel" aria-hidden="true" data-bs-theme="dark">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark text-white border-secondary shadow-lg">
+          
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title fw-bold text-uppercase" id="modalContactoLabel">Contacto & Contratación</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+
+          <div class="modal-body">
+            <form id="formContacto">
+              
+              <div class="mb-3">
+                <label for="inputNombre" class="form-label fw-semibold">Nombre completo</label>
+                <input type="text" class="form-control bg-secondary text-white border-secondary" id="inputNombre" placeholder="Tu nombre o empresa" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label fw-semibold">Correo electrónico</label>
+                <input type="email" class="form-control bg-secondary text-white border-secondary" id="inputEmail" placeholder="ejemplo@correo.com" required>
+              </div>
+
+              <div class="mb-3">
+                <label for="selectMotivo" class="form-label fw-semibold">Motivo de contacto</label>
+                <select class="form-select bg-secondary text-white border-secondary" id="selectMotivo" required>
+                  <option value="" selected disabled>Selecciona una opción...</option>
+                  <option value="contratacion">Contratación de conciertos</option>
+                  <option value="prensa">Prensa y Entrevistas</option>
+                  <option value="merch">Consultas sobre Merchandising</option>
+                  <option value="fans">Mensaje de fans</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="textareaMensaje" class="form-label fw-semibold">Mensaje</label>
+                <textarea class="form-control bg-secondary text-white border-secondary" id="textareaMensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="checkPrivacidad" required>
+                <label class="form-check-label text-white-50 small" for="checkPrivacidad">
+                  Acepto la política de privacidad y el tratamiento de mis datos.
+                </label>
+              </div>
+
+              <button type="submit" class="d-none" id="btnSubmitHidden"></button>
+            </form>
+          </div>
+
+          <div class="modal-footer border-secondary">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="submit" form="formContacto" class="btn btn-danger fw-bold">Enviar mensaje</button>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
