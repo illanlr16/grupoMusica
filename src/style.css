@@ -1,5 +1,6 @@
-body{
+:root, body {
   background-color: #121417 !important;
+  color: #f8f9fa;
 }
 
 .navbar-custom{
@@ -21,10 +22,9 @@ body{
 }
 
 .nav-link:hover{
-  color: #ff4d4d;
+  color: var(--bs-primary);
   transform: translateY(-2px);
   text-shadow: 0 0 8px rgba(255,77,77,0.6);
-
 }
 
 .btn-hamborguesa:hover{
@@ -56,3 +56,4 @@ body{
   object-fit:cover;
   object-position: center top;
 }
+
